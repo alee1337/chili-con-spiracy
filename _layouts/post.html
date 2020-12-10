@@ -1,14 +1,22 @@
 ---
 layout: default
+button_width: 100
 ---
-<h1>{{ page.title }}</h1>
 
-<p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
+{% if page.previous.url %}
+<a href="{{page.previous.url}}">
+  <img alt="previous" src="/assets/images/arrow-left.png" width="{{layout.button_width}}">
+</a>
+
+{% endif %}
+{% if page.next.url %}
+
+<a href="{{page.next.url}}">
+  <img border="0" alt="next" src="/assets/images/arrow.png" width="{{layout.button_width}}">
+</a>
+
+{% endif %}
+
+<img  border="0" src="/assets/images/{{ page.slug }}.png" alt="{{ page.slug }}">
 
 {{ content }}
