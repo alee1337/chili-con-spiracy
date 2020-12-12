@@ -2,7 +2,16 @@
 layout: post
 ---
 
-<img  border="0" src="/assets/images/comics/{{ page.slug }}.png" alt="{{ page.slug }}">
+<style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    text-align: center;
+  }
+</style>
+
+<div class="container">
+  <img  border="0" src="/assets/images/comics/{{ page.slug }}.png" alt="{{ page.slug }}" class="center">
+</div>
 
 {{ content }}
 

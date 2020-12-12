@@ -1,0 +1,26 @@
+---
+layout: archive
+---
+
+<h3 class="archive__subtitle">All comics</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div>
+  {% for post in posts %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% assign img_width = 300 %}
+    {% if loopindex == 1 %}
+      <div>
+        {% include archive_comic_preview.html %}
+    {% else %}
+        {% include archive_comic_preview.html %}
+      </div>
+    {% endif %}
+{% endfor %}
+</div>
