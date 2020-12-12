@@ -1,0 +1,42 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+<style type="text/css" media="screen">
+    .container {
+      margin: 10px auto;
+      text-align: center;
+    }
+    .navi_toolbox {
+      text-align:center;
+    }
+    .image_button{
+      display:inline-block;
+      margin:5px 20px;
+      padding:5px;
+    }
+</style>
+
+<div class="navi_toolbox">
+    {% assign post = site.posts.first %}
+
+    {% for prev in site.posts offset:1 limit:1 %}
+    <div class="image_button">
+    <a href="{{prev.url}}">
+        <img alt="previous post" src="/assets/images/arrow-left.png">
+    </a>
+    </div>
+    {% endfor %}
+
+    <img alt="random post" src="/assets/images/dice.png" onclick="document.location='/'" title="Show random post">
+
+
+
+    <div class="container">
+        <img src="/assets/images/comics/{{ post.slug }}.png" alt="{{ post.slug }}" class="center">
+    </div>
+</div> 
+{{post.content}}

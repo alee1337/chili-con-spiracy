@@ -1,30 +1,37 @@
 ---
 layout: default
-button_width: 77
 ---
 
 
 <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    text-align: center;
+  .navi_toolbox {
+    text-align:center;
+  }
+  .image_button{
+    display:inline-block;
+    margin:5px 20px;
+    padding:5px;
   }
 </style>
 
-<div class="container">
-  
+<div class="navi_toolbox">
+
   {% if page.previous.url %}
-  <a href="{{page.previous.url}}">
-    <img alt="previous" src="/assets/images/arrow-left.png" width="{{layout.button_width}}">
-  </a>
+  <div class="image_button">
+    <a href="{{page.previous.url}}">
+    <img alt="previous post" src="/assets/images/arrow-left.png">
+    </a>
+  </div>
   {% endif %}
 
-  <img alt="random" src="/assets/images/dice.png">
+  <img alt="random post" src="/assets/images/dice.png" onclick="document.location='/'" title="Show random post">
 
   {% if page.next.url %}
-  <a href="{{page.next.url}}">
-    <img alt="next" src="/assets/images/arrow.png" width="{{layout.button_width}}">
-  </a>
+  <div class="image_button">
+    <a href="{{page.next.url}}">
+    <img alt="next post" src="/assets/images/arrow.png">
+    </a>
+  </div>
   {% endif %}
 
 </div>
