@@ -18,7 +18,7 @@ layout: default
 
   {% if page.previous.url %}
   <div class="image_button">
-    <a href="{{page.previous.url}}">
+    <a href="{{site.baseurl}}{{page.previous.url}}">
     <img alt="previous post" src="/assets/images/arrow-left.png">
     </a>
   </div>
@@ -28,7 +28,7 @@ layout: default
 
   {% if page.next.url %}
   <div class="image_button">
-    <a href="{{page.next.url}}">
+    <a href="{{site.baseurl}}{{page.next.url}}">
     <img alt="next post" src="/assets/images/arrow.png">
     </a>
   </div>
