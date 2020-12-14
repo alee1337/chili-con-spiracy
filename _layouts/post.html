@@ -19,17 +19,17 @@ layout: default
   {% if page.previous.url %}
   <div class="image_button">
     <a href="{{site.baseurl}}{{page.previous.url}}">
-    <img alt="previous post" src="/assets/images/arrow-left.png">
+    <img alt="previous post" src="{{site.baseurl}}/assets/images/arrow-left.png">
     </a>
   </div>
   {% endif %}
 
-  <img alt="random post" src="/assets/images/dice.png" onclick="document.location='/'" title="Show random post">
+  <img alt="random post" src="{{site.baseurl}}/assets/images/dice.png" onclick="document.location='/'" title="Show random post">
 
   {% if page.next.url %}
   <div class="image_button">
     <a href="{{site.baseurl}}{{page.next.url}}">
-    <img alt="next post" src="/assets/images/arrow.png">
+    <img alt="next post" src="{{site.baseurl}}/assets/images/arrow.png">
     </a>
   </div>
   {% endif %}
