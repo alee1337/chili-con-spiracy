@@ -4,8 +4,8 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "All comics"
     url: /all-comics
-  - title: "Flutter"
-    url: /fluttertest    
+  #- title: "Flutter"
+  #  url: /fluttertest    
   - title: "About"
     url: /about
   # - title: "Sample Posts"
