@@ -15,7 +15,6 @@ layout: default
 </style>
 
 <div class="navi_toolbox">
-
   {% if page.previous.url %}
   <div class="image_button">
     <a href="{{site.baseurl}}{{page.previous.url}}">
@@ -33,9 +32,42 @@ layout: default
     </a>
   </div>
   {% endif %}
-
 </div>
 
 
 <br>
 {{ content }}
+
+
+{% assign all_related = "" | split: ',' %}
+
+
+{% for tag in site.tags %}
+  {% if page.tags contains tag.first %}
+    {% assign t = tag | first %}
+    {% assign posts = tag | last %}
+    {% for post in posts %}
+        {% if post.slug != page.slug %}
+          {% assign all_related = all_related | push: post.slug %}
+        {% endif %}
+    {% endfor %}
+   {% endif %}
+{% endfor %}
+
+{% assign all_related = all_related | uniq %}
+
+{% if all_related != empty %}
+  {% assign img_width = 200 %}
+  <br>
+  <h2>Related:</h2>
+  <p>
+    {% for slug in all_related %}
+      <div class="image_button">
+        <a href="{{site.baseurl}}/{{ slug }}">
+          <img alt="preview" src="{{site.baseurl}}/assets/images/comics/{{slug}}.png" width="{{img_width}}">
+        </a>
+      </div>
+    {% endfor %}
+  </p>
+  
+{% endif %} 

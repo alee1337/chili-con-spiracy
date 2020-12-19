@@ -24,7 +24,6 @@ layout: archive
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="container">
   {% for post in posts %}
-    {% assign loopindex = forloop.index | modulo: 2 %}
     {% assign img_width = 300 %}
       <div class="image_button">
         {% include archive_comic_preview.html %}
