@@ -34,9 +34,16 @@ layout: home
     <img alt="random post" src="{{site.baseurl}}/assets/images/dice.png" onclick="document.location='/'" title="Show random post">
 
 
-
-    <div class="container">
-        <img src="{{site.baseurl}}/assets/images/comics/{{ post.slug }}.png" alt="{{ post.slug }}" class="center">
-    </div>
+    {% capture img_path %}
+      {{site.baseurl}}/assets/images/comics/{{ post.slug }}.png
+    {% endcapture %}
+    {% for static_file in site.static_files %}
+      {% if img_path contains static_file.path %}
+        <div class="container">
+          <img src="{{site.baseurl}}/assets/images/comics/{{ post.slug }}.png" alt="{{ post.slug }}" class="center">
+        </div>
+      {% endif %}
+    {% endfor %}
+    
 </div> 
 {{post.content}}
