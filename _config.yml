@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "chili" # "default" # "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Chili con spiracy"
+title                    : "chili con spiracy"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "aLee"

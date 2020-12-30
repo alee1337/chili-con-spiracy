@@ -3,7 +3,8 @@ layout: default
 title: About
 ---
 
-
+# About
+Bad drawings mainly about conspiracy theories, gaming and programming.
 
 # FAQ
 
@@ -28,3 +29,9 @@ People already shared 26 billion dollars worth of app ideas with me over the las
 
 #### Are the questions in this FAQ made up?
 Yes.
+
+# Contact
+
+<a href="mailto:mail@chili-con-spiracy.com">
+    mail@chili-con-spiracy.com
+</a>
