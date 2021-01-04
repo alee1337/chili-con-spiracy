@@ -1,4 +1,4 @@
 ---
 layout: comic
-tags: "corona face mask eyes sexiest magazine"
+tags: "corona face mask eyes sexiest magazine ugly"
 ---

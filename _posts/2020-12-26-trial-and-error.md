@@ -1,4 +1,4 @@
 ---
 layout: comic
-tags: "software trial error manual"
+tags: "software softwaredev trial error manual"
 ---

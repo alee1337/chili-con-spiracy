@@ -1,4 +1,4 @@
 ---
 layout: comic
-tags: "software stackoverflow"
+tags: "softwaredev stackoverflow"
 ---

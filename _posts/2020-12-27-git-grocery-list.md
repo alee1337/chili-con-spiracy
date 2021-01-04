@@ -1,4 +1,4 @@
 ---
 layout: comic
-tags: "software commit git grocery shopping"
+tags: "softwaredev commit git grocery shopping"
 ---

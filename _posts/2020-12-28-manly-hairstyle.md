@@ -1,4 +1,4 @@
 ---
 layout: comic
-tags: "manly hair beard beast"
+tags: "manly hair beard beast ugly"
 ---
