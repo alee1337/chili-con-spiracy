@@ -4,7 +4,7 @@ title: About
 ---
 
 # About
-Bad drawings mainly about conspiracy theories, gaming, programming, finances and other uninteresting topics.
+Bad drawings mainly about conspiracy theories, gaming, programming, my life and other uninteresting topics.
 
 # FAQ
 
