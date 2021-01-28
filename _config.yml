@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "chili con spiracy"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "aLee"
+name                     : "chili con spiracy" # author
 description              : "A webcomic"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # "/chili-con-spiracy" # the subpath of your site, e.g. "/blog"

@@ -1,4 +1,4 @@
 ---
 layout: comic
-tags: "gaming league bronze"
+tags: "drone outside nerd"
 ---
